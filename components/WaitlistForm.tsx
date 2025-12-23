@@ -26,7 +26,17 @@ export function WaitlistForm() {
   });
   return (
     <Form {...form}>
-      <form className="flex flex-col w-full sm:flex-row gap-2 pt-8 sm:pt-0">
+      <form
+        name="waitlist"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        className="flex flex-col w-full sm:flex-row gap-2 pt-8 sm:pt-0"
+      >
+        <input type="hidden" name="form-name" value="waitlist" />
+        <p className="hidden">
+          <input name="bot-field" />
+        </p>
         <FormField
           control={form.control}
           name="email"
