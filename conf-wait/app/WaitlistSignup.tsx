@@ -16,7 +16,7 @@ export function WaitlistSignup() {
   }
 
   return (
-    <div className="flex flex-col gap-2 pt-4">
+    <div className="flex flex-col gap-2 pt-8">
       <form action={handleSubmit} className="flex flex-col sm:flex-row gap-4">
         <Input
           type="email"
