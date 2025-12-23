@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { WaitlistSignup } from "./WaitlistSignup";
 import { MapPin, Layers, MessageCircle } from "lucide-react";
 import Image from "next/image";
 
@@ -40,16 +40,7 @@ export default function Page() {
             </p>
 
             {/* Email Signup Form */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Input
-                type="email"
-                placeholder="Enter your email address..."
-                className="bg-[#2a4a4a] border-[#3a5a5a] text-white placeholder:text-gray-400 flex-1"
-              />
-              <Button className="bg-[#5a8a7a] hover:bg-[#4a7a6a] text-white px-8">
-                Get Early Access
-              </Button>
-            </div>
+            <WaitlistSignup />
 
             <p className="text-sm text-gray-400">
               Join 1,500+ Namibians waiting for launch.
